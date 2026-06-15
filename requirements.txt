@@ -1,0 +1,26 @@
+# lerobot_sdk runtime dependencies.
+#
+# The SDK is fully self-contained: the subset of the official ``lerobot``
+# codebase it needs is vendored under ``lerobot_sdk/_vendor/lerobot_core``. It
+# does NOT depend on an external ``lerobot`` install or source tree. The
+# packages below are the third-party libraries that vendored code imports.
+
+# Core / kinematics
+numpy>=1.24
+
+# Required for forward/inverse kinematics (get_tcp / move_to_pose).
+# Optional: joint-space features (get_joints / move_to_joints / save_pose) work
+# without it.
+placo>=0.9
+
+# Motor bus + Feetech servo communication.
+pyserial>=3.5
+feetech-servo-sdk>=1.0.0
+deepdiff>=6.0
+tqdm>=4.0
+
+# Config (de)serialization for robot config + calibration files.
+draccus>=0.8
+
+# Used to resolve the default calibration directory (HF cache location).
+huggingface-hub>=0.20

@@ -17,7 +17,7 @@ from __future__ import annotations
 import argparse
 import time
 
-from lerobot_sdk import LeRobotArm
+from so_arm_sdk import LeRobotArm
 
 
 def main() -> None:

@@ -17,7 +17,7 @@ from __future__ import annotations
 
 import argparse
 
-from lerobot_sdk import ARM_JOINTS, GRIPPER_JOINT, LeRobotArm
+from so_arm_sdk import ARM_JOINTS, GRIPPER_JOINT, LeRobotArm
 
 JOINTS = [*ARM_JOINTS, GRIPPER_JOINT]
 

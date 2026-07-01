@@ -34,7 +34,7 @@ from __future__ import annotations
 import argparse
 import sys
 
-from lerobot_sdk import ARM_JOINTS, GRIPPER_JOINT, LeRobotArm
+from so_arm_sdk import ARM_JOINTS, GRIPPER_JOINT, LeRobotArm
 
 JOINTS = [*ARM_JOINTS, GRIPPER_JOINT]
 ARM_MIN, ARM_MAX = -180.0, 180.0

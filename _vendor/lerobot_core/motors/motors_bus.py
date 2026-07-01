@@ -38,8 +38,10 @@ from tqdm import tqdm
 from ..utils.decorators import check_if_already_connected, check_if_not_connected
 from ..utils.misc import enter_pressed, move_cursor_up
 
-type NameOrID = str | int
-type Value = int | float
+# NOTE: plain alias assignments (not PEP 695 `type` statements) for Python 3.10
+# compatibility; the `X | Y` union operator itself is valid since 3.10.
+NameOrID = str | int
+Value = int | float
 
 logger = logging.getLogger(__name__)
 
